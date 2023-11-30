@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-xlid
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-with-depl-tenant/appstudio/dc-metro-map-xlid@sha256:f415affa63f0465cb124e1f2c63a3ae254b2ed573fa758f094e5db1170bfa0be
+        name: my-nodejs
+        resources: {}
+status: {}
